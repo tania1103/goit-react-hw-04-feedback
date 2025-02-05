@@ -1,0 +1,44 @@
+.statistics-list {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.statistics-item {
+  padding: 10px;
+  width: 50px;
+  height: 60px;
+  border-radius: 10%;
+  background-color: #e9a9c2;
+  color: #18120b;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+.statistics-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.statistics-text span {
+  font-weight: 500;
+}
+.statistics-positive {
+  font-size: 36px;
+  animation: animation-scale 0.5s linear;
+}
+.statistics-positive span {
+  font-weight: bold;
+  text-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes animation-scale {
+  0% {
+    font-size: 0;
+  }
+  75% {
+    font-size: 46px;
+  }
+  100% {
+    font-size: 36px;
+  }
+}
